@@ -1,12 +1,12 @@
 module.exports = {
   env: {
-    node: true,
     browser: true,
-    es6: true,
-    jest: true,
+    es2021: true,
   },
-  root: true,
   extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
@@ -16,11 +16,12 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier",
   ],
+  overrides: [],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: "latest",
     sourceType: "module",
-    ecmaFeatures: {
+    cmaFeatures: {
       jsx: true,
     },
     tsconfigRootDir: __dirname,
@@ -35,7 +36,7 @@ module.exports = {
     "unused-imports",
     "sort-keys-fix",
   ],
-  rules: {
+  rrules: {
     indent: "off",
     "linebreak-style": "off",
     "no-trailing-spaces": ["error"],
