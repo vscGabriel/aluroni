@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.5.1",
     "@types/node": "^16.11.21",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
@@ -24,7 +24,7 @@
   "scripts": {
     "start:windows": "./scripts/bat/start-windows.bat",
     "start:unix": "./scripts/bat/start-windows.sh",
-    "build": "react-scripts build",
+    "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -48,8 +48,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",
-    "@babel/eslint-parser": "^7.18.9",
-    "@testing-library/react": "^13.2.0",
+    "@babel/eslint-parser": "^7.18.9",    
+    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.1",
     "@types/react-beautiful-dnd": "^13.1.2",
