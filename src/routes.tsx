@@ -14,7 +14,7 @@ export default function AppRouter() {
       <Router>
         <Menu />
         <Routes>
-          <Route path='aluroni/' element={<PaginaPadrao />} >
+          <Route path='/' element={<PaginaPadrao />} >
             <Route index element={<Inicio />} />
             <Route path='cardapio' element={<Cardapio />} />
             <Route path='sobre' element={<Sobre />} />
