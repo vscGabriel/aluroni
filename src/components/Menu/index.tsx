@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 export default function Menu() {
   const rotas = [{
     label: 'Início',
-    to: '/'
+    to: '/aluroni'
   }, {
     label: 'Cardápio',
-    to: '/cardapio'
+    to: '/aluroni/cardapio'
   }, {
     label: 'Sobre',
-    to: '/sobre'
+    to: '/aluroni/sobre'
   }];
   return (
     <nav className={styles.menu}>
-      <Logo />
+      <Link to={"/aluroni"}><Logo /></Link>
       <ul className={styles.menu__list}>
         {rotas.map((rota, index) => (
           <li key={index} className={styles.menu__link}>
